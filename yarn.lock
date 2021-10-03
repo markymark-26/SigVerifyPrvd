@@ -220,6 +220,13 @@
   "resolved" "https://registry.npmjs.org/aws4/-/aws4-1.11.0.tgz"
   "version" "1.11.0"
 
+"axios@^0.22.0":
+  "integrity" "sha512-Z0U3uhqQeg1oNcihswf4ZD57O3NrR1+ZXhxaROaWpDmsDTx7T2HNBV2ulBtie2hwJptu8UvgnJoK+BIqdzh/1w=="
+  "resolved" "https://registry.npmjs.org/axios/-/axios-0.22.0.tgz"
+  "version" "0.22.0"
+  dependencies:
+    "follow-redirects" "^1.14.4"
+
 "babel-cli@^6.7.5":
   "integrity" "sha1-UCq1SHTX24itALiHoGODzgPQAvE="
   "resolved" "https://registry.npmjs.org/babel-cli/-/babel-cli-6.26.0.tgz"
@@ -1726,6 +1733,11 @@
     "rimraf" "~2.6.2"
     "write" "^0.2.1"
 
+"follow-redirects@^1.14.4":
+  "integrity" "sha512-zwGkiSXC1MUJG/qmeIFH2HBJx9u0V46QGUe3YR1fXG8bXQxq7fLj0RjLZQ5nubr9qNJUZrH+xUcwXEoXNpfS+g=="
+  "resolved" "https://registry.npmjs.org/follow-redirects/-/follow-redirects-1.14.4.tgz"
+  "version" "1.14.4"
+
 "for-in@^1.0.1", "for-in@^1.0.2":
   "integrity" "sha1-gQaNKVqBQuwKxybG4iAMMPttXoA="
   "resolved" "https://registry.npmjs.org/for-in/-/for-in-1.0.2.tgz"
@@ -2947,7 +2959,7 @@
   dependencies:
     "asap" "~2.0.3"
 
-"prop-types@^15.5.10":
+"prop-types@^15.5.10", "prop-types@^15.7.2":
   "integrity" "sha512-8QQikdH7//R2vurIJSutZ1smHYTcLpRWEOlHnzcWHmBYrOGUysKwSsrC89BCiFj3CbrfJ/nXFdJepOVrY1GCHQ=="
   "resolved" "https://registry.npmjs.org/prop-types/-/prop-types-15.7.2.tgz"
   "version" "15.7.2"
@@ -2980,6 +2992,11 @@
     "kind-of" "^6.0.0"
     "math-random" "^1.0.1"
 
+"reach@^1.0.1":
+  "integrity" "sha512-TyINp42lj7idWA7/twiZhpokruUPpj6YS1HJ0hDt8L+9upXtK0knjlC2bZigQyg2/okcHJl35Ngxw6ydougFjg=="
+  "resolved" "https://registry.npmjs.org/reach/-/reach-1.0.1.tgz"
+  "version" "1.0.1"
+
 "react-dom@^0.14.0 || ^15.0.0":
   "integrity" "sha512-mpjXqC2t1FuYsILOLCj0kg6pbg460byZkVA/80VtDmKU/pYmoTdHOtaMcTRIDiyXLz4sIur0cQ04nOC6iGndJg=="
   "resolved" "https://registry.npmjs.org/react-dom/-/react-dom-15.7.0.tgz"
@@ -3000,7 +3017,7 @@
   "resolved" "https://registry.npmjs.org/react-native-sha256/-/react-native-sha256-1.4.7.tgz"
   "version" "1.4.7"
 
-"react@^0.14.0 || ^15.0.0", "react@^15.7.0":
+"react@^15.7.0":
   "integrity" "sha512-5/MMRYmpmM0sMTHGLossnJCrmXQIiJilD6y3YN3TzAwGFj6zdnMtFv6xmi65PHKRV+pehIHpT7oy67Sr6s9AHA=="
   "resolved" "https://registry.npmjs.org/react/-/react-15.7.0.tgz"
   "version" "15.7.0"

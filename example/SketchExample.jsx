@@ -2,23 +2,32 @@ import React, { Component } from 'react';
 import { SketchPad, TOOL_PENCIL, TOOL_LINE, TOOL_RECTANGLE, TOOL_ELLIPSE } from './../src';
 import IO from 'socket.io-client'
 import { sha256, sha224 } from 'js-sha256';
+//import { AxiosProvider, Request, Get, Delete, Head, Post, Put, Patch, withAxios } from 'react-axios'
+import axios from 'axios';
 
 const wsClient = IO(`ws://127.0.0.1:12346`);
 
 export default class SketchExample extends Component
 {
-
-//look up tailwindcss guide to intergrate with
-
  saveCanvas() {
     var canvas = document.getElementById("canvas").firstElementChild;
     var ctx = canvas.getContext("2d");
     var data = canvas.toDataURL();
     var hash = sha256(data);
     
-  console.log(hash);
     
-    console.log('Saved!');
+    axios.post(`https://privacy.provide.services`, {"key":"privacyBaseUrl"})
+      .then(res => {
+        console.log(res);
+        console.log(res.data);
+      })
+  
+
+    
+    
+    
+  console.log(hash);
+
   }
   
   socket = null;
@@ -46,10 +55,10 @@ export default class SketchExample extends Component
       <div>
          <form>
      <p> <label>
-    First Name:  <p>  <input type="text" name="First name" /> </p>
+    First Name:  <p>  <input type="text" name="Firstname" /> </p>
   </label></p>
   <p>  <label>
-    Last Name:  <p>  <input type="text" name="Last name" /> </p>
+    Last Name:  <p>  <input type="text" name="Lastname" /> </p>
   </label></p>
 <p><label>
 Date:     <p>    <input type="text" name="Date" /> </p>
