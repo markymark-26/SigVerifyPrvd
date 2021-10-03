@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { SketchPad, TOOL_PENCIL, TOOL_LINE, TOOL_RECTANGLE, TOOL_ELLIPSE } from './../src';
 import IO from 'socket.io-client'
+import { sha256, sha224 } from 'js-sha256';
 
 const wsClient = IO(`ws://127.0.0.1:12346`);
 
@@ -13,8 +14,9 @@ export default class SketchExample extends Component
     var canvas = document.getElementById("canvas").firstElementChild;
     var ctx = canvas.getContext("2d");
     var data = canvas.toDataURL();
+    var hash = sha256(data);
     
-  console.log(data);
+  console.log(hash);
     
     console.log('Saved!');
   }

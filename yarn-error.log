@@ -1,5 +1,5 @@
 Arguments: 
-  /home/ubuntu/.nvm/versions/node/v16.10.0/bin/node /usr/share/yarn/bin/yarn.js install
+  /home/ubuntu/.nvm/versions/node/v16.10.0/bin/node /usr/share/yarn/bin/yarn.js add react-native-sha256
 
 PATH: 
   /home/ubuntu/.nvm/versions/node/v16.10.0/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin
