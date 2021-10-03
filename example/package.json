@@ -30,7 +30,7 @@
     "react-hot-loader": "^1.3.0",
     "socket.io-client": "^1.4.5",
     "uuid": "^2.0.0",
-    "webpack": "^1.12.15",
+    "webpack": "^1.15.0",
     "webpack-dev-server": "^1.14.1"
   }
 }
